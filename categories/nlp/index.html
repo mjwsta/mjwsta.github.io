@@ -3,7 +3,7 @@
 <html lang="zh-cn">
 <head>
     <meta charset="utf-8" />
-    <title>Archives | mjw的博客</title>
+    <title>Categories: nlp | mjw的博客</title>
     <meta name="author" content="mjw" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -44,8 +44,6 @@
 <script src="/js/lib/preview.js"></script>
 
 
-
-<script src="/js/lib/search.js"></script>
 
 
 
@@ -157,98 +155,86 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            
-<div id="archives">
+            <div id="archives">
     
-    <input id="search-bar" class="input" placeholder="搜索" v-model="rawSearch" />
-    
-    <div id="timeline-wrap" ref="timeline">
+    <div class="categories-tags">
         
-        <div class="timeline" data-title="helloworld">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/9/12</div>
-                <a href="/2024/09/12/hello-world/">
-                    <h3>Hello World</h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/c-plus-plus/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            C++
-                        </a>
-                    </span>
-                    
-                    
-                </div>
-            </div>
-        </div>
         
-        <div class="timeline" data-title="ubuntu禁止休眠">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/10/24</div>
-                <a href="/2024/10/24/Ubuntu%E7%A6%81%E6%AD%A2%E4%BC%91%E7%9C%A0/">
-                    <h3>Ubuntu禁止休眠</h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/Ubuntu/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            Ubuntu
-                        </a>
-                    </span>
-                    
-                    
-                </div>
-            </div>
-        </div>
         
-        <div class="timeline" data-title="cs224nassignment1">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/10/27</div>
-                <a href="/2024/10/27/cs224n%20assignment%201/">
-                    <h3>cs224n assignment 1</h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/nlp/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            nlp
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/cs224n/" style="color: #03a9f4">
-                                cs224n
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
+        <span>
+            <a href="/categories/c-plus-plus/" style="background: #03a9f4">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                C++
+            </a>
+        </span>
+        
+        
+        
+        <span>
+            <a href="/categories/Ubuntu/" style="background: #ff7d73">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                Ubuntu
+            </a>
+        </span>
+        
+        
+        
+        <span>
+            <a href="/categories/nlp/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                nlp
+            </a>
+        </span>
+        
+        
+        
         
     </div>
+    
+    <div class="timeline">
+        <div class="timeline-tail"></div>
+        <div class="timeline-content">
+            <div class="item-time">2024/10/27</div>
+            <a href="/2024/10/27/cs224n%20assignment%201/">
+                <h3>cs224n assignment 1</h3>
+            </a>
+            <div class="info">
+                
+                <span class="category">
+                    <a href="/categories/nlp/">
+                        <span class="icon">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </span>
+                        nlp
+                    </a>
+                </span>
+                
+                
+                <span class="tags">
+                    <span class="icon">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </span>
+                    
+                    
+                    <span class="tag">
+                        
+                        <a href="/tags/cs224n/" style="color: #ff7d73">
+                            cs224n
+                        </a>
+                    </span>
+                    
+                </span>
+                
+            </div>
+        </div>
+    </div>
+    
 </div>
 
             <footer id="footer">
