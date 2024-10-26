@@ -189,7 +189,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/cs224n/" style="color: #03a9f4">
+                <a href="/tags/cs224n/" style="color: #ffa2c4">
                     cs224n
                 </a>
             </span>
@@ -725,7 +725,7 @@ print (&quot;-&quot; * 80)
 <pre><code>--------------------------------------------------------------------------------
 Outputted Plot:
 </code></pre>
-<p><img src="/./exploring_word_vectors_files/exploring_word_vectors_19_1.png" alt="png"></p>
+<p><img src="/images/exploring_word_vectors_files/exploring_word_vectors_19_1.png" alt="png"></p>
 <pre><code>--------------------------------------------------------------------------------
 </code></pre>
 <h3 id="Question-1-5-Co-Occurrence-Plot-Analysis-written-3-points"><a href="#Question-1-5-Co-Occurrence-Plot-Analysis-written-3-points" class="headerlink" title="Question 1.5: Co-Occurrence Plot Analysis [written] (3 points)"></a>Question 1.5: Co-Occurrence Plot Analysis [written] (3 points)</h3><p>Now we will put together all the parts you have written! We will compute the co-occurrence matrix with fixed window of 4 (the default window size), over the Large Movie Review corpus. Then we will use TruncatedSVD to compute 2-dimensional embeddings of each word. TruncatedSVD returns U*S, so we need to normalize the returned vectors, so that all the vectors will appear around the unit circle (therefore closeness is directional closeness). <strong>Note</strong>: The line of code below that does the normalizing uses the NumPy concept of <em>broadcasting</em>. If you don’t know about broadcasting, check out<br><a target="_blank" rel="noopener" href="https://jakevdp.github.io/PythonDataScienceHandbook/02.05-computation-on-arrays-broadcasting.html">Computation on Arrays: Broadcasting by Jake VanderPlas</a>.</p>
@@ -748,7 +748,7 @@ plot_embeddings(M_normalized, word2ind_co_occurrence, words)
 <pre><code>Running Truncated SVD over 5880 words...
 Done.
 </code></pre>
-<p><img src="/exploring_word_vectors_files/exploring_word_vectors_21_1.png" alt="png"></p>
+<p><img src="/images/exploring_word_vectors_files/exploring_word_vectors_21_1.png" alt="png"></p>
 <p><strong>Verify that your figure matches “question_1.5.png” in the assignment zip. If not, use the figure in “question_1.5.png” to answer the next two questions.</strong></p>
 <p>a. Find at least two groups of words that cluster together in 2-dimensional embedding space. Give an explanation for each cluster you observe.</p>
 <h4 id="fascinating-good-interesting-book-movie-story"><a href="#fascinating-good-interesting-book-movie-story" class="headerlink" title="[fascinating, good, interesting], [book, movie, story]"></a><font color="red">[fascinating, good, interesting], [book, movie, story]</font></h4><p>b. What doesn’t cluster together that you might think should have? Describe at least two examples.</p>
@@ -832,7 +832,7 @@ Done.
 
 plot_embeddings(M_reduced_normalized, word2ind, words)
 </code></pre>
-<p><img src="/exploring_word_vectors_files/exploring_word_vectors_35_0.png" alt="png"></p>
+<p><img src="/images/exploring_word_vectors_files/exploring_word_vectors_35_0.png" alt="png"></p>
 <p><strong>Verify that your figure matches “question_2.1.png” in the assignment zip. If not, use the figure in “question_2.1.png” (and the figure in “question_1.5.png”, if applicable) to answer the next two questions.</strong></p>
 <p>a. What is one way the plot is different from the one generated earlier from the co-occurrence matrix? What is one way it’s similar?</p>
 <h4 id="fascinating-与-good、intersting-分开了；大部分相同词性的还在一个cluster；"><a href="#fascinating-与-good、intersting-分开了；大部分相同词性的还在一个cluster；" class="headerlink" title="fascinating 与 good、intersting 分开了；大部分相同词性的还在一个cluster；"></a><font color="red">fascinating 与 good、intersting 分开了；大部分相同词性的还在一个cluster；</font></h4><p>b. Why might the GloVe plot (question_2.1.png) differ from the plot generated earlier from the co-occurrence matrix (question_1.5.png)?</p>
