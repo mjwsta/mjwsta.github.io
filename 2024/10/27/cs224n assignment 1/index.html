@@ -189,7 +189,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/cs224n/" style="color: #ff7d73">
+                <a href="/tags/cs224n/" style="color: #03a9f4">
                     cs224n
                 </a>
             </span>
@@ -725,7 +725,7 @@ print (&quot;-&quot; * 80)
 <pre><code>--------------------------------------------------------------------------------
 Outputted Plot:
 </code></pre>
-<p><img src="/exploring_word_vectors_files/exploring_word_vectors_19_1.png" alt="png"></p>
+<p><img src="/./exploring_word_vectors_files/exploring_word_vectors_19_1.png" alt="png"></p>
 <pre><code>--------------------------------------------------------------------------------
 </code></pre>
 <h3 id="Question-1-5-Co-Occurrence-Plot-Analysis-written-3-points"><a href="#Question-1-5-Co-Occurrence-Plot-Analysis-written-3-points" class="headerlink" title="Question 1.5: Co-Occurrence Plot Analysis [written] (3 points)"></a>Question 1.5: Co-Occurrence Plot Analysis [written] (3 points)</h3><p>Now we will put together all the parts you have written! We will compute the co-occurrence matrix with fixed window of 4 (the default window size), over the Large Movie Review corpus. Then we will use TruncatedSVD to compute 2-dimensional embeddings of each word. TruncatedSVD returns U*S, so we need to normalize the returned vectors, so that all the vectors will appear around the unit circle (therefore closeness is directional closeness). <strong>Note</strong>: The line of code below that does the normalizing uses the NumPy concept of <em>broadcasting</em>. If you don’t know about broadcasting, check out<br><a target="_blank" rel="noopener" href="https://jakevdp.github.io/PythonDataScienceHandbook/02.05-computation-on-arrays-broadcasting.html">Computation on Arrays: Broadcasting by Jake VanderPlas</a>.</p>
